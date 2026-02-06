@@ -4,6 +4,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 import rateLimit from "express-rate-limit";
 import categoryRoutes from "./routes/category.route";
+import productRoutes from "./routes/product.route";
 
 const app = express();
 
@@ -20,5 +21,6 @@ app.use(
 );
 
 app.use("/api/categories", categoryRoutes);
+app.use("/api/products", productRoutes);
 
 export default app;
