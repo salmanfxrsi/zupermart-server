@@ -24,4 +24,5 @@ export interface IProduct {
   sizes: ISizeStock[];
   images: string[];
   isActive: boolean;
+  isBestSelling: boolean;
 }

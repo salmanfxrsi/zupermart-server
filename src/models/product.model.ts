@@ -23,6 +23,7 @@ const productSchema = new Schema<IProduct>(
 
     images: { type: [String], default: [] },
     isActive: { type: Boolean, default: true },
+    isBestSelling: { type: Boolean, default: false },
   },
   { timestamps: true },
 );
