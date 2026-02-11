@@ -16,7 +16,7 @@ const categorySchema = new Schema<ICategory>(
     },
     season: {
       type: String,
-      enum: ["SUMMER", "WINTER", "ALL"],
+      enum: ["SUMMER", "WINTER", "ALL SEASONS"],
       required: true,
     },
   },
